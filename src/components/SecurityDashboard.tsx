@@ -7,6 +7,7 @@ import NetworkTopology from "./NetworkTopology";
 import ThreatAlerts from "./ThreatAlerts";
 import TrafficAnalytics from "./TrafficAnalytics";
 import DeviceStatus from "./DeviceStatus";
+import PermissionsPanel from "./PermissionsPanel";
 import securityShield from "@/assets/security-shield.jpg";
 
 const SecurityDashboard = () => {
@@ -118,6 +119,9 @@ const SecurityDashboard = () => {
         {/* Device Status */}
         <DeviceStatus />
       </div>
+
+      {/* Permissions Panel */}
+      <PermissionsPanel />
 
       {/* Quick Actions */}
       <Card className="border-primary/20">
