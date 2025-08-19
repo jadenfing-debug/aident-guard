@@ -1,73 +1,153 @@
-# Welcome to your Lovable project
+# AIdentGuard - AI-Powered Network Intrusion Detection System
 
-## Project info
+🛡️ An advanced Network Intrusion Detection and Response System (NIDRS) powered by artificial intelligence for real-time threat monitoring and automated response.
 
-**URL**: https://lovable.dev/projects/5be122d3-d548-4d7b-a31a-0c98093182cb
+## 🎯 Project Overview
 
-## How can I edit this code?
+AIdentGuard is a comprehensive cybersecurity solution that combines traditional signature-based detection with machine learning-powered anomaly detection. The system provides real-time network monitoring, threat detection, and automated response capabilities for enterprise-level network security.
 
-There are several ways of editing your application.
+### Key Features
 
-**Use Lovable**
+- **Real-time Network Monitoring** - Live traffic analysis and logging
+- **Hybrid Threat Detection** - Signature-based and ML-powered anomaly detection
+- **Automated Response System** - Instant threat isolation and admin notifications
+- **Interactive Security Dashboard** - Live visualization of network status and threats
+- **Device Management** - Complete network topology and device status monitoring
+- **Permission Management** - System-level access control for security operations
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5be122d3-d548-4d7b-a31a-0c98093182cb) and start prompting.
+## 🚀 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 18+ (recommended: use [nvm](https://github.com/nvm-sh/nvm))
+- npm or yarn package manager
+- Modern web browser with support for modern web APIs
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/aidentguard.git
+   cd aidentguard
+   ```
 
-Follow these steps:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env
+   ```
+   Edit `.env` with your Supabase credentials (if using backend features)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+5. **Open in browser**
+   Navigate to `http://localhost:8080`
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18, TypeScript, Vite
+- **UI Framework**: shadcn/ui, Tailwind CSS
+- **Charts & Visualization**: Recharts
+- **State Management**: TanStack Query
+- **Backend Integration**: Supabase (optional)
+- **Network Monitoring**: Web APIs (with plans for native integration)
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── ui/              # shadcn/ui components
+│   ├── SecurityDashboard.tsx
+│   ├── NetworkTopology.tsx
+│   ├── ThreatAlerts.tsx
+│   ├── TrafficAnalytics.tsx
+│   ├── DeviceStatus.tsx
+│   └── PermissionsPanel.tsx
+├── pages/
+│   ├── Index.tsx
+│   └── NotFound.tsx
+├── hooks/
+├── lib/
+└── assets/
 ```
 
-**Edit a file directly in GitHub**
+## 🔧 Available Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
-**Use GitHub Codespaces**
+## 🚀 Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Vercel (Recommended)
 
-## What technologies are used for this project?
+1. Push your code to GitHub
+2. Connect your GitHub repository to [Vercel](https://vercel.com)
+3. Deploy with default settings
 
-This project is built with:
+### Netlify
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Build the project: `npm run build`
+2. Deploy the `dist` folder to [Netlify](https://netlify.com)
 
-## How can I deploy this project?
+### Self-hosted
 
-Simply open [Lovable](https://lovable.dev/projects/5be122d3-d548-4d7b-a31a-0c98093182cb) and click on Share -> Publish.
+1. Build the project: `npm run build`
+2. Serve the `dist` folder with any static file server
 
-## Can I connect a custom domain to my Lovable project?
+## 🛡️ Security Features
 
-Yes, you can!
+### Current Implementation
+- **Dashboard Monitoring**: Real-time security metrics visualization
+- **Network Topology**: Interactive network device mapping
+- **Threat Detection**: Simulated threat detection with alert system
+- **Traffic Analysis**: Network traffic pattern analysis
+- **Permission Management**: Web API permission requests
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Planned Enhancements
+- **Real Packet Capture**: Integration with native network monitoring tools
+- **ML-based Anomaly Detection**: Advanced threat pattern recognition
+- **Automated Response**: Network device isolation and blocking
+- **SIEM Integration**: Security Information and Event Management
+- **Compliance Reporting**: Security audit and compliance reports
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+- Create an [Issue](https://github.com/your-username/aidentguard/issues) for bug reports
+- Start a [Discussion](https://github.com/your-username/aidentguard/discussions) for questions
+- Check the [Wiki](https://github.com/your-username/aidentguard/wiki) for documentation
+
+## 🎯 Roadmap
+
+- [ ] Native packet capture integration
+- [ ] Machine learning model training interface
+- [ ] Real-time device isolation capabilities
+- [ ] Advanced threat intelligence feeds
+- [ ] Multi-tenant support
+- [ ] Mobile companion app
+- [ ] API documentation and SDK
+
+---
+
+**⚠️ Security Notice**: This is a demonstration/development version. For production use in critical environments, ensure proper security auditing and compliance with your organization's security policies.
